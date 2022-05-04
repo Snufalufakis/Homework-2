@@ -1,6 +1,4 @@
-body {
-  background-color: var(--primary)
-}
+
 /*Color Refrences*/
 :root {
   --primary: #17112d;
@@ -10,64 +8,24 @@ body {
   --light: #251c39;
   --textcolor: #fff;
 }
-nav{
-  background-color: var(--dark);
-  font-weight: 800;
-	letter-spacing: 0.025em;
-	color: var(--secondary);
-	border-radius: 30px;
-	padding: 0.5em 1em 0.5em 1em;
-  border-color: var(--dark);
-  border-style: solid;
- 
+/* Nav Bar */
+.nav {
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    background-color: var(--dark);
+    font-family: 'Courier New', Courier, monospace;
 }
-header {
-display: flex;
-justify-content: center;
-border: 1px var(--light);
-padding-top: 53px;
-padding-right: 30px;
-padding-bottom: 50px;
-padding-left: 80px;
-color: white;
-font-family: "Gill Sans", sans-serif;
-}
-
-img {
-  height: 352px;
-width: 530px;
-align-self: stretch;
-border-radius: 13%;
-}
-
-#nav {
-
-  padding: 14px 25px;
+/*Nav Bar placement*/
+.nav a {
+  float: left;
+  font-size: 18px;
+  color: white;
   text-align: center;
+  padding: 14px 10px;
   text-decoration: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: medium;
-  width: 100%;
-  height: 7%;
-  color: var(--textcolor)
 }
-p {
-  white-space: normal;
-  margin: 20px;
-  color: var(--textcolor);
-  
-}h2 {
-  color:  var(--textcolor);
-}
-.row::after{
-  content: "";
-  clear:both;
-  display: table;
-}
-.column {
-  justify-self: right;
-  padding: 5px;
-  width: 100%;
+/* Nav Bar hover color*/
+.nav a:hover {
+  background-color: var(--light);
 }
